@@ -1,15 +1,27 @@
-import React from 'react'
+import React from "react";
 
-const Hobbies = ()=>{
-    const hobbies = ['Surfing', 'Rock climbing', 'Mountain biking', 'Breakdancing'];
-return(
-    <div key={Date.now()}>
-      {hobbies.map(hobby=>{
-          return <p>{hobby}</p>
-      }) }
-    </div>
-)
+const Hobbies = ({ prop }) => {
+  return <div>{prop}</div>;
+};
+const HobbyList = () => {
+  const hobbies = [
+    "Surfing",
+    "Rock climbing",
+    "Mountain biking",
+    "Breakdancing",
+  ];
+
+  return (
+    <ol>
+      {hobbies.map((hobby, key) => {
+        return (
+          <li>
+            <Hobbies prop={hobby} key={key} />
+          </li>
+        );
+      })}
+    </ol>
+  );
 };
 
-
-export default Hobbies
+export default HobbyList;

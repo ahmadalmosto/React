@@ -1,5 +1,5 @@
 import React from 'react';
-import Hobbies from './hobbies'
+import HobbyList from './hobbies'
 // import Guarantee from './Guarantee'
 // import coin from './assets'
 // import chat from './assets'
@@ -11,7 +11,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-     <Hobbies />
+     <HobbyList />
      <Counter />
      {/* <Guarantee img={delivery} name="delivery icon" title="delivery" desc= "s simply dummy text of the printing and typesetting industry" />
     //  <Guarantee img={coin} name="coin icon" title="money back" desc= "s simply dummy text of the printing and typesetting industry" />
