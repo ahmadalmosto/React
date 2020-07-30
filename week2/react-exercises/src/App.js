@@ -9,8 +9,7 @@ function App() {
     <div className="App">
      <Friend/>
      <DogGallery/>
-     {/* <RandomJoke/> */}
-    
+     <RandomJoke/>
     </div>
   );
 }
