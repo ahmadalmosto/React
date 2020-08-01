@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+.App-link {
+  color: #61dafb;
+}
+.buttonSub {
+  background-color: #333333;
+  color: whitesmoke;
+}
+.card {
+  margin: 2rem;
+  padding: 1rem;
+  width: 30rem;
+  background-color: #333333;
+  color: whitesmoke;
+}
+.link {
+  font-size: 30px;
+}
+.button {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  height: 30px;
+  width: 110px;
+}
+.forminfo {
+  margin-top: 150px;
+}
