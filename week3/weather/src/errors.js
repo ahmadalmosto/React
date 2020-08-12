@@ -8,9 +8,9 @@ const HandleErrors = ({error,cityInput, loading})=>{
           <p>put city name to get weather </p>
       ) : (null)}
       
-      {!error && <p>{error.message}</p>}
+      {error && <p>{error.message}</p>}
      
-      {!loading && <p>Loading...</p>}
+      {loading && <p>Loading...</p>}
         </div>
     )
  

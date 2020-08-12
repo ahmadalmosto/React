@@ -1,6 +1,6 @@
 import React from 'react'
 
-const RenderCity = ({oneCity,deleteWeather}) =>{  
+const RenderCity = ({oneCity,weatherData ,setWeatherData}) =>{  
  const {
   name,
   weather: [{ main, description }],
@@ -10,10 +10,13 @@ const RenderCity = ({oneCity,deleteWeather}) =>{
   id,
  } = oneCity;
 
-console.log(id)
+ const deleteWeather = (index) => {
+  const newCity = [...weatherData];
+  newCity.splice(index, 1);
+  setWeatherData(newCity);
+};
   return(
     <div>
-    {/* here i dont know why the button dont have access to the delete function  */}
     <button onClick={deleteWeather} id={id}>Delete</button>
       <h2>{name}{country}</h2>
       <h3>{main}</h3>

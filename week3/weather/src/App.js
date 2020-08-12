@@ -1,15 +1,13 @@
-import React from 'react';
-import Weather from './cityInfo'
-import './App.css';
-
+import React from "react";
+import Weather from "./cityInfo";
+import "./App.css";
 
 function App() {
   return (
     <div className="App container">
-    <Weather/>
-   
+      <Weather />
     </div>
   );
-} 
+}
 
 export default App;
