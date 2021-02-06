@@ -11,11 +11,13 @@ export default function CityInfo() {
   const fetchWeather = (cityName) => {
     setLoading(true);
     setError(false);
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.REACT_APP_SECRET_CODE}`;
-    fetch(url)
+    const WEATHER_URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.REACT_APP_SECRET_CODE}`;
+    fetch(WEATHER_URL)
       .then((response) => response.json())
       .then((data) => {
+        console.log(data)
         if (data.cod === 200) {
+          
           setCityData(data);
           setError(false);
           setLoading(false);

@@ -1,9 +1,6 @@
 import React from "react";
 
-export default function Button({ getDogPhoto }) {
-  return (
-    <div>
-      <button onClick={getDogPhoto}>Get Dog</button>
-    </div>
-  );
-}
+const Button = ({ getDogPhoto }) => (
+  <button onClick={getDogPhoto}>Get Friend</button>
+);
+export default Button;

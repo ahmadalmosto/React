@@ -1,14 +1,14 @@
-import Friend from './Friend'
-import RandomJoke from './RandomJoke'
-import './App.css';
-import DogGallery from './DogGallery'
+import Friend from "./Friend";
+import RandomJoke from "./RandomJoke";
+import "./App.css";
+import DogGallery from "./DogGallery";
 function App() {
   return (
     <div className="App">
-   {/* <Friend /> */}
-    <DogGallery />
-   {/* <RandomJoke />  */}
-    </div> 
+      <Friend />
+      <DogGallery />
+      <RandomJoke />
+    </div>
   );
 }
 

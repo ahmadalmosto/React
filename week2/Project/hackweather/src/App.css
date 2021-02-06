@@ -3,21 +3,16 @@
   margin-top: 70px;
 }
 
-
 .card {
-  max-width: 400px ;
-  margin : auto;
+  max-width: 400px;
+  margin: auto;
   border: 1px solid grey;
-  box-shadow: 0 8px 40px -12px rgba(0,0,0,0.3);
-  
-};
-.content {
-  /* text-align: left; */
-  /* padding: muiBaseTheme spacing unit * 3 */
+  box-shadow: 0 8px 40px -12px rgba(0, 0, 0, 0.3);
 }
+
 .heading {
-  font-weight: bold
+  font-weight: bold;
 }
 .subheading {
-  line-height: 1.8
+  line-height: 1.8;
 }

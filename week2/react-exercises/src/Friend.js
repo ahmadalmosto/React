@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import FriendProfile from "./FriendProfile";
-import Button from "./Button";
+import Button from "./FriendButton";
 
 export default function Friend() {
   const [friend, setFriend] = useState({});

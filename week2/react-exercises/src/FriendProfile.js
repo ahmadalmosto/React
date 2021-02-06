@@ -1,19 +1,27 @@
 import React from "react";
 
 export default function FriendProfile({ friend }) {
+  const {
+    name: { title, first, last },
+    location: {
+      country,
+      city,
+      state,
+      street: { name, number },
+    },
+    email,
+    phone,
+    picture: { medium },
+    registered: { age },
+  } = friend;
   return (
     <>
-      <ul style={{ textAlign: "left" }} key={friend.date}>
-        <li>
-          {friend.name.first} {friend.name.last}
-        </li>
-        <li>
-          address : {friend.location.country} , {friend.location.city} ,{" "}
-          {friend.location.street.name}
-        </li>
-        <li>email : {friend.email}</li>
-        <li> phone : {friend.phone}</li>
-      </ul>
+      <h3>{`name : ${title} ${first} ${last}`}</h3>
+      <p>{`age: ${age}`}</p>
+      <p>{`adress : ${country} ,${city}, ${state}, ${`${name}${number}`}`}</p>
+      <p>{`email: ${email}`}</p>
+      <p>{`phone: ${phone}`}</p>
+      <img src={medium} alt={medium} />
     </>
   );
 }
